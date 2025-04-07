@@ -5,8 +5,16 @@ import practica1.ej8.Queue;
 public class BinaryTree<T> {
     private T data;
     private BinaryTree<T> leftchild;
-    private BinaryTree<T> rightchild;
-
+    private BinaryTree<T> rightchild;    
+    
+    public BinaryTree() {
+        super();
+    }
+    
+    public BinaryTree(T data) {
+        this.data = data;
+    }
+    
     public T getData() {
         return data;
     }
@@ -74,7 +82,7 @@ public class BinaryTree<T> {
     
     public BinaryTree<T> espejo (){
         // CREO NUEVO ARBOL PARA DEVOLVERLO INVERTIDO
-        BinaryTree<T> invertido = new BinaryTree<T>();
+        BinaryTree<T> invertido = new BinaryTree<>();
         
         // SI LLEGO A NODO NO NULO, LE AGREGO EL DATO EN EL ARBOL AUXILIAR
         if (!isEmpty()){
@@ -127,6 +135,7 @@ public class BinaryTree<T> {
         }
     }
     
+    @Override
     public String toString(){
         return this.getData().toString();
     }
