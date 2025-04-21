@@ -23,6 +23,7 @@ public class Caminos {
         // SI ES HOJA, VEO SI EL CAMINO ACTUAL ES MAS LARGO QUE EL MAXIMO
         // SI ES MAS LARGO, MODIFICO PATHMAX PORQUE ES EL PRIMERO
         if (camino.isLeaf() && path.size() > pathMax.size()){
+            pathMax.clear();
             pathMax.addAll(path);
         }
         // SINO RECORRO HIJOS
@@ -31,8 +32,8 @@ public class Caminos {
                 caminoAHojaMasLejana(child,path,pathMax);
             }
             // VOY BORRANDO EL NODO A MEDIDA QUE LAS RECURSIONES VUELVEN
-            path.remove(path.size() - 1);
         }
+        path.remove(path.size() - 1);
     }
     
     public static void main(String[] args) {
