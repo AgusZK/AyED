@@ -31,8 +31,7 @@ public class ParcialArboles {
             
             while (size != 0){
                 aux = queue.dequeue();
-                l.add(aux.getData());
-                
+                l.add(aux.getData());  
                 // SI TIENE MENOS QUE 'NUM' HIJOS EL NIVEL YA NO CUMPLE
                 if (aux.getChildren().size() < num){
                     cumple = false;
