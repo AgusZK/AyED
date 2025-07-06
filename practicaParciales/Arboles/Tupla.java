@@ -1,4 +1,4 @@
-package practicaParciales;
+package practicaParciales.Arboles;
 public class Tupla {
     private int suma;
     private int diferencia;

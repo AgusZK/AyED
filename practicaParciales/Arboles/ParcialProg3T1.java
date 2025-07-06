@@ -1,4 +1,4 @@
-package practicaParciales;
+package practicaParciales.Arboles;
 import practica2.BinaryTree;
 import java.util.List;
 import java.util.LinkedList;

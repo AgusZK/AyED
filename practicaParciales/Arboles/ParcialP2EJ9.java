@@ -1,4 +1,4 @@
-package practicaParciales;
+package practicaParciales.Arboles;
 import practica2.BinaryTree;
 import practica1.ej8.Queue;
 
